@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="icon" type="image/png" href="./img/res/logo.jpeg">
+
+    <title>Box Your Meal</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <input type="checkbox" name="" id="check">
+            <div class="logo-container">
+                <a href="./index.html"><h3 class="logo">B<span>ox</span> y<span>our</span> m<span>eal</span></h3></a>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul class="nav">
+                        <li class="nav-link" style="--i: .3s">
+                            <a href="#">FoodTruck</a>
+                        </li>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="./home.html">Box</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.05s">
+                            <a href="./panier.html">Panier</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.45s">
+                            <a href="./profil.html">Profil</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.85s">
+                            <a href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container mt-4 mb-5">
+                <!-- <div class="box-card-grid mt-5 ml-5">
+                </div> -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2 class="col-12 mb-5">Informations sur la box</h2>
+                        <div class="col-12 col-sm-8 offset-sm-2 col-md-8 offset-md-2 offset-lg-2 col-lg-8">
+                            <form id="form-box-info" action="">
+                                <div class="container-fluid box-info-card-container">
+                                    <div class="box-info-arrow-back"></div>
+                                    <div class="row">
+                                        <div id="box-1-img" class="col-12">
+                                            <img src="img/boxes/custombox.png" alt="alt box" class="box-info-img">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="box-1-title" class="col-12">
+                                            <h2 class="box-info-sub-title">My box</h1>
+                                        </div>
+                                    </div>
+                                    <div class="row text-right">
+                                        <div class="col-4 offset-4">
+                                            <p class="box-info-prix-title">Prix :</p>
+                                        </div>
+                                        <div id="box-1-prix" class="col-4">
+                                            <p class="box-info-prix"><span>-</span> €</p>
+                                        </div>
+                                    </div>
+                                    <div class="row my-3">
+                                        <div class="col-12">
+                                            <div class="my-box-select">
+                                                <select class="form-control" id="exampleFormControlSelect2">
+                                                    <option value="" disabled selected>Choissisez vos ingrédients</option>
+                                                    <option>Ingrédient 1 : 1€</option>
+                                                    <option>Ingrédient 2 : 1€</option>
+                                                    <option>Ingrédient 3 : 1€</option>
+                                                    <option>Ingrédient 4 : 1€</option>
+                                                    <option>Ingrédient 5 : 1€</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Ingrédients choisis :</label>
+                                                <textarea readonly class="form-control" id="exampleFormControlTextarea1" rows="3">Ingrédient 1 : 1€</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-1 text-right">
+                                        <div class="col-12">
+                                            <div id="box-1-sizes" class="box-info-sizes"> <!--RADIO BUTTON-->
+                                                <input type="radio" name="box-size" id="box-1-size-s" value="s" required>
+                                                <label class="box-info-btn-size" for="box-1-size-s">S</label>
+                                                
+                                                <input type="radio" name="box-size" id="box-1-size-m" value="m" required>
+                                                <label class="box-info-btn-size" for="box-1-size-m">M</label>
+        
+                                                <input type="radio" name="box-size" id="box-1-size-xl" value="xl" required>
+                                                <label class="box-info-btn-size" for="box-1-size-xl">XL</label>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-1">
+                                        <div class="col-auto mr-3 mt-lg-3">
+                                            <label class="box-info-quantite" for="nb-box" >Quantite :</label>
+                                        </div>
+                                        <div id="box-1-quantite" class="col-auto mt-sm-1 mt-lg-3 mr-5">
+                                            <input id="box-1-quantite-input" type="number" value="1" min="1" max="5" name="nb-box" id="nb-box" class="box-info-current-nb-box" readonly required/>
+                                        </div>
+                                        <div class="ml-3 mt-3 mt-sm-2 col-auto">
+                                            <div class="box-info-btns-quantite">
+                                                <button type="button" class="box-info-btn-minus-quantite">
+                                                    <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M55.497 66.6892C72.6096 37.0496 115.39 37.0496 132.503 66.6892C149.615 96.3286 128.225 133.378 94 133.378C59.7748 133.378 38.3845 96.3286 55.497 66.6892Z" fill="white"/>
+                                                        <path d="M94 13.7187C52.4708 13.7187 18.8 47.3895 18.8 88.9187C18.8 130.448 52.4708 164.119 94 164.119C135.529 164.119 169.2 130.448 169.2 88.9187C169.2 47.3895 135.529 13.7187 94 13.7187ZM131.6 95.1853H56.4C52.9408 95.1853 50.1334 92.3841 50.1334 88.9187C50.1334 85.4532 52.9408 82.652 56.4 82.652H131.6C135.059 82.652 137.867 85.4532 137.867 88.9187C137.867 92.3841 135.059 95.1853 131.6 95.1853Z" fill="#C16565"/>
+                                                    </svg>
+                                                </button>
+                                                <div class="box-info-bg-btn-quantite">
+                                                    <svg width="324" height="112" viewBox="0 0 324 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="324" height="112" fill="#E9E9E9"/>
+                                                    </svg>
+                                                </div>
+                                                <button type="button" class="box-info-btn-add-quantite">
+                                                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.9223 14.125C14.2902 8.29167 22.7098 8.29167 26.0777 14.125C29.4456 19.9583 25.2358 27.25 18.5 27.25C11.7642 27.25 7.55439 19.9583 10.9223 14.125Z" fill="white"/>
+                                                        <path d="M18.5 3.69995C10.3267 3.69995 3.70001 10.3267 3.70001 18.4999C3.70001 26.6732 10.3267 33.2999 18.5 33.2999C26.6733 33.2999 33.3 26.6732 33.3 18.4999C33.3 10.3267 26.6733 3.69995 18.5 3.69995ZM25.9 19.7333H19.7333V25.8999C19.7333 26.582 19.1808 27.1333 18.5 27.1333C17.8192 27.1333 17.2667 26.582 17.2667 25.8999V19.7333H11.1C10.4192 19.7333 9.86667 19.182 9.86667 18.4999C9.86667 17.8179 10.4192 17.2666 11.1 17.2666H17.2667V11.1C17.2667 10.4179 17.8192 9.86662 18.5 9.86662C19.1808 9.86662 19.7333 10.4179 19.7333 11.1V17.2666H25.9C26.5808 17.2666 27.1333 17.8179 27.1333 18.4999C27.1333 19.182 26.5808 19.7333 25.9 19.7333Z" fill="#9ED099"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4 text-center">
+                                        <div class="col-12">
+                                            <button id="box-1-add-panier" type="submit" class="box-info-btn-add-panier">Ajouter au panier</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

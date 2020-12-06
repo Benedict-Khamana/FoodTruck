@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <link rel="icon" type="image/png" href="./img/res/logo.jpeg">
+    <title>Box Your Meal</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <input type="checkbox" name="" id="check">
+            <div class="logo-container">
+                <a href="./index.html"><h3 class="logo">B<span>ox</span> y<span>our</span> m<span>eal</span></h3></a>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul class="nav">
+                        <li class="nav-link" style="--i: .3s">
+                            <a href="#">FoodTruck</a>
+                        </li>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="./home.html">Box</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.05s">
+                            <a href="./panier.html">Panier</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.45s">
+                            <a href="./profil.html">Profil</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.85s">
+                            <a href="#">Se déconnecter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container-fluid mt-4">
+                <!-- <div class="box-card-grid mt-5 ml-5">
+                </div> -->
+                <div class="container">
+                    <div id="box-perso" class="row">
+                        <h2 class="col-12 mb-5">Box personnalisée</h2>
+
+                        <div class="col-12 col-md-6 offset-md-4 col-lg-4">
+                            <div id="box-perso-1" class="box-card-container">
+                                <a href="myBox.html"><img src="img/boxes/custombox.png" alt="alt box" class="box-img"></a>
+                                <h1 class="box-title" id="box-perso-1-title">My box</h1>
+                                <p id="box-perso-1-prix" class="box-prix" ><span>5</span> €</p>
+                                <button id="box-perso-1-add-panier" class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box-originales" class="row">
+                        <h2  class="col-12 mb-5">Box originales</h2>
+                        <div id="box-1" class="col-12 col-md-6 col-lg-4">
+                            <div class="box-card-container">
+                                <a id="box-1-img" href="infoBox.html"><img src="img/boxes/salade_fruit.jpg" alt="alt box" class="box-img"></a>
+                                <h1 id="box-1-title" class="box-title">box 1</h1>
+                                <p id="box-1-prix" class="box-prix"><span>5</span> €</p>
+                                <button id="box-1-prix" class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="box-card-container">
+                                <a href="infoBox.html"><img src="img/boxes/pâtes.jpg" alt="alt box" class="box-img"></a>
+                                <h1 class="box-title">box 2</h1>
+                                <p class="box-prix"><span>5.8</span> €</p>
+                                <button class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="box-card-container">
+                                <a href="infoBox.html"><img src="img/boxes/salade.jpg" alt="alt box" class="box-img"></a>
+                                <h1 class="box-title">box 3</h1>
+                                <p class="box-prix"><span>5.6</span> €</p>
+                                <button class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="box-card-container">
+                                <a href="infoBox.html"><img src="img/boxes/salade-vege.jpg" alt="alt box" class="box-img"></a>
+                                <h1 class="box-title">box 4</h1>
+                                <p class="box-prix">5 €</p>
+                                <button class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="box-card-container">
+                                <a href="infoBox.html"><img src="img/boxes/brochette.jpg" alt="alt box" class="box-img"></a>
+                                <h1 class="box-title">box 5</h1>
+                                <p class="box-prix">5 €</p>
+                                <button class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="box-card-container">
+                                <a href="infoBox.html"><img src="img/boxes/pizza.jpg" alt="alt box" class="box-img"></a>
+                                <h1 class="box-title">box 6</h1>
+                                <p class="box-prix">5 €</p>
+                                <button class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+</body>
+
+
+<template id="box-home-page-template">
+    <div class="col-12 col-md-6 col-lg-4">
+        <div id="box-1" class="box-card-container">
+            <a id="box-1-img" href=""><img src="img/res/pâtes.jpg" alt="alt box" class="box-img"></a>
+            <h1 id="box-1-title" class="box-title">My box</h1>
+            <p id="box-1-prix" class="box-prix"><span>5</span> €</p>
+            <button id="box-1-prix" class="btn-add-panier"><svg width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5.7C9.118.7.7 9.118.7 19.5c0 10.382 8.418 18.8 18.8 18.8 10.382 0 18.8-8.418 18.8-18.8C38.3 9.118 29.882.7 19.5.7zm9.4 20.367h-7.833V28.9a1.566 1.566 0 11-3.134 0v-7.833H10.1a1.566 1.566 0 110-3.134h7.833V10.1a1.566 1.566 0 113.134 0v7.833H28.9a1.566 1.566 0 110 3.134z" fill="#285423"/></svg></button>
+        </div>
+    </div>
+</template>
+
+
+</html>

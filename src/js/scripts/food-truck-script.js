@@ -1,5 +1,5 @@
 //import { openDB, deleteDB, wrap, unwrap } from 'idb/build/iife/index-min';
-import * as datas from '../data/foodTruckData';
+import * as datas from '../data/foodTruckData.js';
 
 export function InitDatabase(){
     const request = indexedDB.open('food_truck_db', 1);
@@ -18,35 +18,15 @@ export function InitDatabase(){
     }
 
     // When request succeed
-    request.onsuccess = () => {
+    request.onsuccess = () => {''
         db = request.result;
+        console.log(datas);
+        db.deleteObjectStore('boxes');
+        
     }
 
     // If some other tab is laoded with database, need to be closed
     request.onblocked = () => {
         alert('Please close all other tabs with this site open');
     }
-}
-
-export function actionconfig(config, action, CallBack, failCallBack)
-{
-
-    $.ajax("/php/fichiers/Config.php", {
-        type: "POST",
-        data: {
-            Config: config,
-            Action: action
-        },
-        dataType: "json",
-
-        success: function (data) {
-            if(CallBack != null)
-                CallBack(data);
-        },
-        error: function () {
-            console.log("request failed");
-            if(failCallBack != null)
-                failCallBack("request failed");
-        }
-    })
 }

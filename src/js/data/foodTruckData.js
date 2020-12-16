@@ -6,7 +6,7 @@ export const boxData = [
         lienimg: 'img/boxes/salade_fruit.jpg',
         desc: 'Une box pleine de vitamines',
         sizes: [
-            'S', 'M', 'XL'
+            'S', 'M', 'L'
         ],
     },
     {
@@ -16,7 +16,7 @@ export const boxData = [
         lienimg: 'img/boxes/pâtes.jpg',
         desc: 'Pâtes bolo',
         sizes: [
-            'S', 'M', 'XL'
+            'S', 'M', 'L'
         ],
     },
     {
@@ -26,7 +26,7 @@ export const boxData = [
         lienimg: 'img/boxes/salade.jpg',
         desc: 'Une salade avec de la viande',
         sizes: [
-            'S', 'M', 'XL'
+            'S', 'M', 'L'
         ],
     },
     {
@@ -36,7 +36,7 @@ export const boxData = [
         lienimg: 'img/boxes/salade-vege.jpg',
         desc: 'Une salade vegétarienne',
         sizes: [
-            'S', 'M', 'XL'
+            'S', 'M', 'L'
         ],
     },
     {
@@ -46,7 +46,7 @@ export const boxData = [
         lienimg: 'img/boxes/brochette.jpg',
         desc: 'Brochettes de boeuf',
         sizes: [
-            'S', 'M', 'XL'
+            'S', 'M', 'L'
         ],
     },
     {
@@ -56,7 +56,7 @@ export const boxData = [
         lienimg: 'img/boxes/pizza.jpg',
         desc: 'Une petite pizza',
         sizes: [
-            'S', 'M', 'XL'
+            'S', 'M', 'L'
         ],
     },
 ];

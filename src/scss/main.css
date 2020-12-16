@@ -43,7 +43,6 @@ body {
   height: 177px;
   -webkit-transform: scale(150%, 150%);
           transform: scale(150%, 150%);
-  background-image: url("/src/img/res/logo.svg");
   background-repeat: no-repeat;
 }
 
@@ -429,6 +428,279 @@ body {
 
 .box-info-btn-add-panier:focus {
   outline: none;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: local("C:/Bene/Ecole/B3/SysDistribue/Labo/HEPL-SYSDIST-2020-2021/Frontend/ShopSln/ShopWebApplication/wwwroot/fonts/Sansation/Sansation_Regular.ttf");
+}
+
+.my-catalog-cart {
+  position: relative;
+}
+
+.my-catalog-cart svg path {
+  fill: #000;
+}
+
+.my-catalog-cart .my-catalog-cart-bg {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  background-color: #4DD2DB;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  left: 3em;
+  top: -.1em;
+}
+
+.my-catalog-cart .my-catalog-cart-bg span {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.catalog-title {
+  letter-spacing: 2.5rem;
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.card-item {
+  position: relative;
+  width: 100%;
+  max-width: 301px;
+  min-height: 569px;
+  max-height: 853.5px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  -webkit-box-shadow: 0px 5px 10px 3px #E0E0E0;
+          box-shadow: 0px 5px 10px 3px #E0E0E0;
+  font-family: 'Lato';
+}
+
+.card-item .card-item-stock-container {
+  position: absolute;
+  right: 2.5em;
+  top: -1em;
+  display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card-item .card-item-stock-container .card-item-stock-bg {
+  position: absolute;
+  width: 66.48px;
+  height: 60px;
+  background-color: #4DD2DB;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card-item .card-item-stock-container .card-item-stock-bg .card-item-stock {
+  position: absolute;
+  font-size: 18px;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 900;
+  color: #FFFFFF;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card-item .card-item-stock-container .card-item-stock-bg .card-item-stock span {
+  font-weight: bold;
+}
+
+.card-item .card-item-stock-container:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.card-item .card-item-stock-container:hover .card-item-stock-bg {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  background-color: #FFFFFF;
+  color: #4DD2DB;
+  border: 1px solid #4DD2DB;
+}
+
+.card-item .card-item-stock-container:hover .card-item-stock {
+  color: #4DD2DB;
+}
+
+.card-item .card-item-header {
+  position: absolute;
+  top: 132px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card-item .card-item-header .card-item-img {
+  -webkit-clip-path: inset(0% 0% 0% 0% round 15px);
+          clip-path: inset(0% 0% 0% 0% round 15px);
+  width: 200px;
+  height: 177px;
+}
+
+.card-item .card-item-body {
+  position: relative;
+  top: 33.5vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card-item .card-item-body .card-item-type {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-item .card-item-body .card-item-name {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  top: -10px;
+}
+
+.card-item .card-item-body .card-item-desc {
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
+
+.card-item .card-item-body .card-item-price {
+  position: relative;
+  top: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-item .card-item-body .card-item-price span {
+  font-weight: bold;
+}
+
+.card-item .card-item-footer {
+  position: absolute;
+  left: 50%;
+  bottom: -.5vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card-item .card-item-footer .card-item-btn-add {
+  font-size: 18px;
+  width: 105.26px;
+  height: 38px;
+  background-color: #4DD2DB;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 900;
+  border-radius: 50px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card-item .card-item-footer .card-item-btn-add:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  background-color: #FFFFFF;
+  color: #4DD2DB;
+  border: 1px solid #4DD2DB;
+  -webkit-transform: scale(120%, 120%);
+          transform: scale(120%, 120%);
+}
+
+.card-item .card-item-footer .card-item-btn-add:active {
+  -webkit-transform: scale(128%, 128%);
+          transform: scale(128%, 128%);
+  outline: none;
+}
+
+.card-item .card-item-footer .card-item-btn-add:focus {
+  outline: none;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  opacity: .5;
+  border: white solid 1px;
+  background-color: #71dbe2;
+  height: 12px;
+  width: 12px;
+  margin-top: 50px;
+  outline: none;
+}
+
+.swiper-container .swiper-pagination-bullet:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.swiper-container .swiper-pagination-bullet:active {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: #71dbe2;
+  outline: none;
+  opacity: 1;
+  height: 17px;
+  width: 17px;
+}
+
+.swiper-container .swiper-scrollbar-drag {
+  background-color: #71dbe2;
+}
+
+.swiper-container .swiper-scrollbar {
+  background-color: #e1f8f9;
+}
+
+.swiper-container .swiper-button-next, .swiper-container .swiper-button-prev {
+  color: #71dbe2;
+  outline: none;
+}
+
+.swiper-container .swiper-button-next:hover, .swiper-container .swiper-button-prev:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #2bc8d2;
+}
+
+.swiper-container .swiper-button-next:active, .swiper-container .swiper-button-prev:active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #2bc8d2;
 }
 
 .my-box-select select {

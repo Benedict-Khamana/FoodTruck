@@ -356,3 +356,6 @@ dist/
 .DS_Store
 coverage/
 .vscode/
+
+## My scripts
+index.js
